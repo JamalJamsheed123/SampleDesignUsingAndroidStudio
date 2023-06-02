@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rectangleBar"
+        android:layout_marginStart="145dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/rectangle1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/userProfile"
+        android:layout_width="136dp"
+        android:layout_height="108dp"
+        android:src="@drawable/userprofile"
+        app:layout_constraintBottom_toTopOf="@+id/userName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+    <Button
+        android:id="@+id/logout_button"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="47dp"
+        android:textColor="#FFFFFF"
+        android:text="Logout"
+        android:gravity="center"
+        android:textStyle="normal|bold"
+        android:textSize="24dp"
+        android:textAllCaps="false"
+        android:letterSpacing="0.095"
+        android:background="@drawable/rounded_corner2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/rectangleBar">
+
+    </Button>
+
+    <TextView
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="john.doe@example.com"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Upgrade_Layout"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="John Doe"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="29dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/userEmail"
+        >
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Upgrade_Layout"
+        android:background="@drawable/rounded_corner2"
+        android:layout_width="222dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:hint="Upgrade to PRO"
+        app:hintTextColor="#000000"
+        android:textColorHint="#000000"
+        app:boxStrokeWidth="0.5dp"
+        app:boxStrokeColor="#CDF34A"
+        app:boxCornerRadiusTopStart="22.5dp"
+        app:boxCornerRadiusTopEnd="22.5dp"
+        app:boxCornerRadiusBottomStart="22.5dp"
+        app:boxCornerRadiusBottomEnd="22.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Privacy_Layout"
+        tools:layout_editor_absoluteY="201dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/UpgradeButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#D8FF9800"
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:lineHeight="30dp"
+            android:textFontWeight="300"
+            android:gravity="center"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/InviteFreind_Layout"
+        android:background="@drawable/rounded_corner2"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:hint="      Invite a Freind"
+        app:hintTextColor="#000000"
+        android:textColorHint="#000000"
+        app:boxStrokeWidth="0.5dp"
+        app:boxStrokeColor="#CDF34A"
+        app:boxCornerRadiusTopStart="22.5dp"
+        app:boxCornerRadiusTopEnd="22.5dp"
+        app:boxCornerRadiusBottomStart="22.5dp"
+        app:boxCornerRadiusBottomEnd="22.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/logout_button"
+        tools:layout_editor_absoluteY="201dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/InviteAFreind"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_semibold"
+            android:backgroundTint="@color/myEditTextColor"
+            android:drawableStart="@drawable/privacy"
+            android:drawableEnd="@drawable/right_arrow"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:lineHeight="30dp"
+            android:textFontWeight="300"
+            android:textAlignment="center"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Settings_Layout"
+        android:background="@drawable/rounded_corner2"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:hint="      Settings"
+        app:hintTextColor="#000000"
+        android:textColorHint="#000000"
+        app:boxStrokeWidth="0.5dp"
+        app:boxStrokeColor="#CDF34A"
+        app:boxCornerRadiusTopStart="22.5dp"
+        app:boxCornerRadiusTopEnd="22.5dp"
+        app:boxCornerRadiusBottomStart="22.5dp"
+        app:boxCornerRadiusBottomEnd="22.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/InviteFreind_Layout"
+        tools:layout_editor_absoluteY="201dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/Settings"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_semibold"
+            android:backgroundTint="@color/myEditTextColor"
+            android:textColor="#000000"
+            android:drawableStart="@drawable/setting"
+            android:drawableEnd="@drawable/right_arrow"
+            android:textSize="17dp"
+            android:lineHeight="30dp"
+            android:textFontWeight="300"
+            android:textAlignment="center"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/HelpAndSupport_Layout"
+        android:background="@drawable/rounded_corner2"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:hint="      Help &amp; Support"
+        app:hintTextColor="#000000"
+        android:textColorHint="#000000"
+        app:boxStrokeWidth="0.5dp"
+        app:boxStrokeColor="#CDF34A"
+        app:boxCornerRadiusTopStart="22.5dp"
+        app:boxCornerRadiusTopEnd="22.5dp"
+        app:boxCornerRadiusBottomStart="22.5dp"
+        app:boxCornerRadiusBottomEnd="22.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/Settings_Layout"
+        tools:layout_editor_absoluteY="201dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/HelpAndSupport"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_semibold"
+            android:backgroundTint="@color/myEditTextColor"
+            android:textColor="#000000"
+            android:drawableStart="@drawable/question"
+            android:drawableEnd="@drawable/right_arrow"
+            android:textSize="17dp"
+            android:lineHeight="30dp"
+            android:textFontWeight="300"
+            android:textAlignment="center"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/PurchaseHistory_Layout"
+        android:background="@drawable/rounded_corner2"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:hint="      Purchase History"
+        app:hintTextColor="#000000"
+        android:textColorHint="#000000"
+        app:boxStrokeWidth="0.5dp"
+        app:boxStrokeColor="#CDF34A"
+        app:boxCornerRadiusTopStart="22.5dp"
+        app:boxCornerRadiusTopEnd="22.5dp"
+        app:boxCornerRadiusBottomStart="22.5dp"
+        app:boxCornerRadiusBottomEnd="22.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/HelpAndSupport_Layout"
+        tools:layout_editor_absoluteY="201dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/PurchaseHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_semibold"
+            android:backgroundTint="@color/myEditTextColor"
+            android:drawableStart="@drawable/history"
+            android:drawableEnd="@drawable/right_arrow"
+            android:textColor="#000000"
+            android:textSize="17dp"
+            android:lineHeight="30dp"
+            android:textFontWeight="300"
+            android:textAlignment="center"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Privacy_Layout"
+        android:background="@drawable/rounded_corner2"
+        android:layout_width="358dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="13dp"
+        android:hint="      Privacy"
+        app:hintTextColor="#000000"
+        android:textColorHint="#000000"
+        app:boxStrokeWidth="0.5dp"
+        app:boxStrokeColor="#CDF34A"
+        app:boxCornerRadiusTopStart="22.5dp"
+        app:boxCornerRadiusTopEnd="22.5dp"
+        app:boxCornerRadiusBottomStart="22.5dp"
+        app:boxCornerRadiusBottomEnd="22.5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/PurchaseHistory_Layout"
+        tools:layout_editor_absoluteY="201dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/Privacy"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/poppins_semibold"
+            android:backgroundTint="@color/myEditTextColor"
+            android:textColor="#000000"
+            android:drawableStart="@drawable/privacy"
+            android:drawableEnd="@drawable/right_arrow"
+            android:textSize="17dp"
+            android:lineHeight="30dp"
+            android:textFontWeight="300"
+            android:textAlignment="center"
+            android:paddingBottom="-1dp"
+            android:paddingTop="-1dp"
+
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
